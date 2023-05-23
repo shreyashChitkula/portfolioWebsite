@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(85, 142, 0);
+}
+body {
+  background-color: purple;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  z-index: 1;
+  padding: 5px 0px 5px 30px;
+  background-color: rgb(192, 197, 201, 0.5);
+  color: white;
+  position: fixed;
+  top: 0;
+}
+.nav .logo {
+  height: 100%;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 3vw;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.nav ul li a {
+  color: white;
+  box-sizing: border-box;
+}
+.menu:hover {
+  color: black;
+  text-decoration: underline;
+}
+.image img{
+  width: 50vw;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+.contactPage {
+  background-color: rgb(255, 255, 255);
+  padding: 60px;
+  border-radius: 30% 70% 28% 72% / 70% 18% 82% 30%;
+  box-sizing: border-box;
+  position: relative;
+  top: 20vh;
+}
+.nameinput,.emailInput,.mobileNumberInput,.messageInput{
+}
+input{
+  height: 45px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
+  margin: 10px;
+  width: 100%;
+}
+h1,
+h4,
+h5 {
+  text-align: center;
+}
+textarea {
+  width: 100%;
+  height: 20vh;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
+  padding: 4px;
+}
+input[type="submit"] {
+  box-shadow: 5px 5px 10px grey;
+  background-color: rgb(95, 247, 214);
+  border: 2px black solid;
+}
+input[type="submit"]:hover {
+  color: rgb(255, 147, 6);
+  background-color: rgb(234, 225, 225);
+  cursor: pointer;
+}
+.topbutton {
+  /* width: 15px; */
+  background-color: rgb(164, 244, 120);
+  /* height: auto; */
+  position: fixed;
+  bottom: 118px;
+  right: 20px;
+  border-radius: 40px;
+  box-shadow: 6px 6px 15px rgb(178, 174, 174);
+}
+.downbutton {
+  background-color: rgb(164, 244, 120);
+  /* height: auto; */
+  position: fixed;
+  bottom: 34px;
+  right: 20px;
+  border-radius: 40px;
+  box-shadow: 6px 6px 15px rgb(178, 174, 174);
+}
+.topbutton img {
+  width: 50px;
+}
+.downbutton img {
+  width: 50px;
+}
+.problem {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+}
+.problem a {
+  color: rgb(20, 237, 198);
+  text-decoration: underline;
+}
+.maillink{
+  text-transform: none;
+}
+@keyframes border{
+  from{
+    border-radius: 0;
+  }
+  to{
+    border-radius:   border-radius: 30% 70% 28% 72% / 70% 18% 82% 30%;
+    ;
+  }
+}
+@media screen and (max-width:400px) {
+  .nav ul li{
+    margin: 0 2vw;
+  }
+  .logo{
+    width: 60px;
+    height: auto;
+  }
+  
+}

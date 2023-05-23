@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  z-index: 1;
+  padding: 5px 0px 5px 5px;
+  background-color: rgb(192, 197, 201, 0.5);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav .logo {
+  height: 100%;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 3vw;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.nav ul li a {
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+.menu:hover {
+  color: black;
+  text-decoration: underline;
+}
+body {
+  background-color: rgb(228, 163, 42);
+}
+.content {
+  position: absolute;
+  top: 15vh;
+}
+marquee {
+  width: 100vw;
+  font-size: 30px;
+}
+.projects {
+  width: 90vw;
+  margin: auto;
+}
+iframe {
+  width: 100%;
+  height:100vh;
+  border-radius: 30px;
+}
+.skills {
+  padding: 10px;
+}
+.amount {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px white solid;
+  background-color: rgb(199, 236, 243);
+  box-shadow: 20px 5px 50px rgb(174, 16, 185);
+  margin: 10px 0;
+}
+.skill1 {
+  width: 95vw;
+  animation: skill1 10s 1;
+}
+.skill2 {
+  width: 80vw;
+  animation: skill2 10s 1;
+}
+.skill3 {
+  width: 20vw;
+  animation: skill3 10s 1;
+}
+.skill4 {
+  width: 50vw;
+  animation: skill4 10s 1;
+}
+.skill5 {
+  width: 30vw;
+  animation: skill5 10s 1;
+}
+.text {
+  width: fit-content;
+  margin-left: auto;
+  color: rgb(50, 48, 48);
+}
+.topbutton {
+  /* width: 15px; */
+  background-color: rgb(164, 244, 120);
+  /* height: auto; */
+  position: fixed;
+  bottom: 118px;
+  right: 20px;
+  border-radius: 40px;
+  box-shadow: 6px 6px 15px rgb(178, 174, 174);
+}
+.downbutton {
+  background-color: rgb(164, 244, 120);
+  /* height: auto; */
+  position: fixed;
+  bottom: 34px;
+  right: 20px;
+  border-radius: 40px;
+  box-shadow: 6px 6px 15px rgb(178, 174, 174);
+}
+.topbutton img {
+  width: 50px;
+}
+.downbutton img {
+  width: 50px;
+}
+.problem {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+}
+.problem a {
+  color: rgb(28, 78, 69);
+  text-decoration: underline;
+}
+@keyframes skill1 {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 95vw;
+  }
+}
+@keyframes skill2 {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 80vw;
+  }
+}
+@keyframes skill3 {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+@keyframes skill4 {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 50vw;
+  }
+}
+@keyframes skill5 {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 30vw;
+  }
+}

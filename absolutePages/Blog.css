@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    background-color: rgb(234, 225, 56);
+}
+.main{
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    z-index: 1;
+    padding: 5px 0px 5px 5px;
+    background-color: rgb(192, 197, 201, 0.5);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .nav .logo {
+    height: 100%;
+  }
+  .nav ul {
+    display: flex;
+  }
+  .nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: fit-content;
+    margin: 0 3vw;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .nav ul li a {
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+  }
+  .menu:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+  }
+  details{
+    padding: 10px;
+    border: 1px solid wheat;
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 5px 5px grey;
+  }
+  .blogheading{
+    margin: 10px 0;
+  }
+  summary{
+    font-size: 20px;
+  }
+  summary+p{
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+  .answer{
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    padding: 2px;
+  }
+  pre{
+    text-transform: none;
+  }
+  .topbutton {
+    /* width: 15px; */
+    background-color: rgb(164, 244, 120);
+    /* height: auto; */
+    position: fixed;
+    bottom: 118px;
+    right: 20px;
+    border-radius: 40px;
+    box-shadow: 6px 6px 15px rgb(178, 174, 174);
+  }
+  .downbutton {
+    background-color: rgb(164, 244, 120);
+    /* height: auto; */
+    position: fixed;
+    bottom: 34px;
+    right: 20px;
+    border-radius: 40px;
+    box-shadow: 6px 6px 15px rgb(178, 174, 174);
+  }
+  .topbutton img {
+    width: 50px;
+  }
+  .downbutton img {
+    width: 50px;
+  }
+  .problem {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+  }
+  .problem a {
+    color: rgb(28, 78, 69);
+    text-decoration: underline;
+  }

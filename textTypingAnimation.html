@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .wrapper .static-text{
+            font-size: 40px;
+            font-weight: 900;
+        }
+        .wrapper .dynamic-text{
+            margin-left: 0px;
+            margin-top: 4px;
+        }
+        .dynamic-text li{
+            list-style-type: none;
+            font-size: 60px;
+            font-weight: 900;
+        }
+        .dynamic-text li span{
+            position: relative;
+            left: 0;
+        }
+        .dynamic-text li span::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 80px;
+            width: 100%;
+            background-color:white;
+            border-left: 2px solid red;
+            animation: typing 4s steps(28) infinite;
+        }
+        @keyframes typing {
+            100%{
+                left:100%;
+            }
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="static-text">
+        </div>
+        <ul class="dynamic-text">
+            <li><span>Welcome to unicloja!!!</span></li>
+        </ul>
+    </div>
+  </body>
+</html>
